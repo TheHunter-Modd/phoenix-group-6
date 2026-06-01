@@ -1,5 +1,5 @@
 import logo from "../assets/logo.png";
-import image from "../assets/planet_img.png";
+import img from "../assets/planet_img.png";
 function Hero() {
   const scrollToPlanets = () => {
     const section = document.getElementById("planets");
@@ -51,7 +51,7 @@ function Hero() {
 
         <div className="hero-image">
           <img
-            src={image}
+            src={img}
             alt="Planet Earth"
           />
         </div>
