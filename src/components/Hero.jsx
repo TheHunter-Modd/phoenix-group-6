@@ -1,3 +1,5 @@
+import logo from "../assets/logo.png";
+import img from "../assets/planet_img.png";
 function Hero() {
   const scrollToPlanets = () => {
     const section = document.getElementById("planets");
@@ -18,9 +20,9 @@ function Hero() {
       <div className="hero-content">
         <div className="logo">
       <img
-        src="https://images.pexels.com/photos/20376399/pexels-photo-20376399.jpeg"
+        src={logo}
         alt="Solar System Logo" 
-      /><h3>Phoenix Group-6</h3>
+      />
     </div>
         <div className="hero-text">
           <h1>Explore Our Solar System Through Data</h1>
@@ -49,7 +51,7 @@ function Hero() {
 
         <div className="hero-image">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/c/cb/The_Blue_Marble_%28remastered%29.jpg"
+            src={img}
             alt="Planet Earth"
           />
         </div>
