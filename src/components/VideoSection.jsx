@@ -18,7 +18,7 @@ function VideoSection() {
         </div>
 
         <div className="video-text">
-          <h2>How Planetary Data Helps<br/>Us Understand Space</h2>
+          <h2>How Planetary Data Helps<br/>Us Understand Space.</h2>
 
           <p>
             How Planetary Data Helps Us Understand Space
