@@ -8,6 +8,10 @@ function Footer() {
         
         <div className="footer-about">
           <h3>About</h3>
+          <p> 
+            We are a team of passionate developers dedicated to creating innovative solutions for growth and success in the digital age. 
+            We are collaborating to build responsive, user-friendly web applications while honing our front-end development skills.
+          </p> 
 
           <ul className="members-list">
             <li>Malachy</li>
@@ -47,7 +51,7 @@ function Footer() {
 
             <p>
               Built by {" "}
-              <a href="https://github.com/TheHunter-Modd/Phoenix-group-6"
+              <a href="https://github.com/TheHunter-Modd/phoenix-group-6"
                 target="_blank"
                 rel="noopener noreferrer">
                 Phoenix Group 6
