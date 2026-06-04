@@ -28,8 +28,7 @@ function Hero() {
           <h1>Explore Our Solar System Through Data</h1>
 
           <p>
-            Explore Our Solar System Through Data
-            Understand the planets not just by name, but by measurable facts.
+          Understand the planets not just by name, but by measurable facts.
             From size and mass to gravity and density, 
             this page breaks down the solar system in a clear, 
             data-driven way.

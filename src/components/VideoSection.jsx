@@ -21,8 +21,7 @@ function VideoSection() {
           <h2>How Planetary Data Helps<br/>Us Understand Space</h2>
 
           <p>
-            How Planetary Data Helps Us Understand Space
-            Planetary science goes beyond images. 
+          Planetary science goes beyond images. 
             Comparing mass, diameter, gravity, and density, 
             we gain insight into how planets form, behave, 
             and interact within the solar system.
