@@ -34,6 +34,7 @@
 
 .contact-header {
   margin-bottom: 36px;
+  align-items: flex-start;
 }
 
 .contact-title {
@@ -42,6 +43,7 @@
   color: var(--blue-heading);
   margin-bottom: 8px;
   line-height: 1.3;
+
 }
 
 .contact-subtitle {
