@@ -1,10 +1,16 @@
- table {
+.table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            border-radius: 20px;
+}
+table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
     text-align: center;
     padding: 1%;
-    border-radius: 70px;
+    border-radius: 12 px;
     overflow: hidden;
 }
 
@@ -45,7 +51,7 @@
          .Planet-4{
             background-color: #D6E4FF;
         }
-         .planet-5{
+         .Planet-5{
             background-color: #D6E4FF;
         }
 
