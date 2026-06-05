@@ -25,6 +25,7 @@
   font-weight: 600;
   color: var(--heading-color);
   margin-bottom: 0.75rem;
+  text-align: center;
 }
 
 .section-header p {
@@ -90,6 +91,7 @@
   font-weight: 600;
   color: var(--heading-color);
   margin: 0 0 0.5rem;
+  text-align: center;
   line-height: 1.4;
 
   /* Clamp to 2 lines */
@@ -108,6 +110,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  text-align: center;
 }
 
 /* ── Skeleton loading ── */
