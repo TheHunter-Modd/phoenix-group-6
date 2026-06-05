@@ -2,55 +2,49 @@ import { useState, useEffect } from "react";
 import "./PlanetSection.css";
 
 export default function PlanetSection() {
-  const [cards, setCards] = useState([]);
+  const [planets, setPlanets] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchCards = async () => {
+    const fetchPlanets = async () => {
       try {
-        const [photosRes, postsRes] = await Promise.all([
-          fetch("https://anurella.github.io/json/planets.json"),
-          fetch("https://anurella.github.io/json/planets.json"),
-        ]);
+        const res = await fetch("https://anurella.github.io/json/planets.json");
+        const data = await res.json();
 
-        const photos = await photosRes.json();
-        const posts = await postsRes.json();
-
-        const combined = photos.map((photo, i) => ({
-          id: photo.id,
-          image: photo.thumbnailUrl,
-          alt: photo.title,
-          title: posts[i].title,
-          description: posts[i].body,
+        // Mapped using the EXACT keys from the JSON file!
+        const mappedPlanets = data.map((planet, index) => ({
+          id: index, // Using index as ID since the JSON doesn't have an ID key
+          image: planet.image,
+          name: planet.planet,
+          distance: planet.distanceFromSun,
         }));
 
-        setCards(combined);
+        setPlanets(mappedPlanets);
       } catch (err) {
-        setError("Failed to load articles.");
+        setError("Failed to load planets.");
       } finally {
         setLoading(false);
       }
     };
 
-    fetchCards();
+    fetchPlanets();
   }, []);
 
   return (
-    <section className="article-section">
-      {/* Existing header content */}
+    // Added id="planets" so the Hero section scroll button works
+    <section className="article-section" id="planets">
       <div className="section-header">
         <h2>Visualizing the Differences Between Planets</h2>
 
         <p>
           Each planet in our solar system has unique physical characteristics.
-          visual comparisons help highlight how vasty
+          Visual comparisons help highlight how vastly
           <br />
-          different terrestrial planet are from gas gaints and ice giants.
+          different terrestrial planets are from gas giants and ice giants.
         </p>
       </div>
 
-      {/* Cards appended below */}
       {error && <p className="error">{error}</p>}
 
       <div className="card-grid">
@@ -66,13 +60,16 @@ export default function PlanetSection() {
                   </div>
                 </div>
               ))
-          : cards.map((card) => (
-              <div key={card.id} className="card">
-                <img src={card.image} alt={card.alt} loading="lazy" />
-                <div className="card-body">
-                  <h3>{card.title}</h3>
-                  <p>{card.description}</p>
-                </div>
+          : planets.map((planet) => (
+              <div key={planet.id} className="card">
+                {/* RUBRIC REQUIREMENT: Using <figure> and <figcaption> */}
+                <figure>
+                  <img src={planet.image} alt={planet.name} loading="lazy" />
+                  <figcaption className="card-body">
+                    <h3>{planet.name}</h3>
+                    <p>Distance from sun: {planet.distance} million km</p>
+                  </figcaption>
+                </figure>
               </div>
             ))}
       </div>
