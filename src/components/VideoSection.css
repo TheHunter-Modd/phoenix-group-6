@@ -1,0 +1,47 @@
+/* VIDEO SECTION */
+
+.video-section {
+  padding: 80px 8%;
+  background: white;
+}
+
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.video-box {
+  flex: 1;
+}
+
+.video-box video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.video-text {
+  flex: 1;
+  color:rgb(8, 45, 232) !important; 
+}
+
+.video-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color:rgb(7, 34, 172) !important; 
+}
+
+.video-text p {
+  line-height: 1.8;
+  color: #444;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .video-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}

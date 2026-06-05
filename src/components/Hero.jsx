@@ -1,5 +1,7 @@
+import "./Hero.css";
 import logo from "../assets/logo.png";
 import img from "../assets/planet_img.png";
+
 function Hero() {
   const scrollToPlanets = () => {
     const section = document.getElementById("planets");
