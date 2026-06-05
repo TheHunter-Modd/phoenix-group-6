@@ -123,20 +123,21 @@ export default function ContactForm() {
             {errors.phone && <span className="error-msg">{errors.phone}</span>}
           </div>
 
-          <div className="field-group message-group">
+          <div className="field-group">
             <label htmlFor="message">Message<span className="required">*</span></label>
-            <textarea
-              id="message" name="message"
+            <input
+              id="message" name="message" type="text"
               placeholder="Enter your message"
               value={values.message} onChange={handleChange}
               className={errors.message ? "error" : ""}
-              maxLength={MAX_CHARS + 20}
+               maxLength={MAX_CHARS + 20}
             />
             <span className={`char-count ${charsLeft < 0 ? "over" : ""}`}>
               {charsLeft >= 0 ? `${charsLeft} characters remaining` : `${Math.abs(charsLeft)} over limit`}
             </span>
             {errors.message && <span className="error-msg">{errors.message}</span>}
           </div>
+
 
         </div>
 
