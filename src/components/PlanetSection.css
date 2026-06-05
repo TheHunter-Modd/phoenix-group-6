@@ -46,7 +46,7 @@ article-section {
   grid-template-columns: repeat(3, 1fr);   /* fixed 3 columns on desktop */
   gap: 1.5rem;
   margin-top: 2rem;
-  padding: 32px;px;
+  padding: 32px;
 }
 
 /* ── Individual card ── */
