@@ -1,3 +1,4 @@
+import "./VideoSection.css";
 function VideoSection() {
   return (
     <section className="video-section">
