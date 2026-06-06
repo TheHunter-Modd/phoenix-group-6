@@ -21,6 +21,7 @@ article-section {
 .section-header {
   margin-bottom: 2.5rem;
   padding-top: 2rem;
+  /*text-align: center;*/
 }
 
 .section-header h2 {
@@ -28,13 +29,14 @@ article-section {
   font-weight: 600;
   color: var(--heading-color);
   margin-bottom: 0.75rem;
+  text-align: center;
 }
 
 .section-header p {
   font-size: 1rem;
   color: var(--paragraph-color);
   line-height: 1.7;
-  max-width: 1680px;
+  /*max-width: 1680px;*/
   margin-bottom: 0.4rem;
   /* background-color: red; */
   text-align: center;
@@ -101,6 +103,7 @@ article-section {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  text-align: center;
 }
 
 .card-body p {
