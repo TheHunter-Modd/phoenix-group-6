@@ -1,59 +1,89 @@
+/* FACT TABLE SECTION */
+
+.main-section {
+  padding: 80px 8%; 
+  box-sizing: border-box;
+}
+
+
+.main-section h2 {
+  text-align: left;
+  padding: 0; 
+  margin-bottom: 10px;
+  color: #1E4FDB;
+}
+
+.main-section p {
+  text-align: left;
+  color: black;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
 .table-wrapper {
-            width: 100%;
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-            border-radius: 20px;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 12px;
+  border: 1px solid #d0d9f0;
 }
+
 table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    text-align: center;
-    padding: 1%;
-    border-radius: 12 px;
-    overflow: hidden;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-            @media only screen and (max-width: 768px) {
-                table {
-                    font-size: 14px;
-                }
-            }
-            
-            th, td {
-                border: 1px solid white;
-                padding: 10px;
-                text-align: center;
-                color: black;
-            }
-              th {
-            background-color: #1E4FDB;
-            color: white;
-            font-weight: 600;
-        }
-          tbody {
-            background-color: #E8F0FE;
-            
-        }
-       
-        h2{
-            color: #1E4FDB;
-        }
-        .Planet-1{
-            background-color: #D6E4FF;
-        }
-         .Planet-2{
-            background-color: #D6E4FF;
-        }
-         .Planet-3{
-            background-color: #D6E4FF;
-            
-        }
-         .Planet-4{
-            background-color: #D6E4FF;
-        }
-         .Planet-5{
-            background-color: #D6E4FF;
-        }
+.main-section th, 
+.main-section td {
+  border: 1px solid white;
+  padding: 10px;
+  text-align: center;
+}
 
-            
+.main-section th {
+  background-color: #1E4FDB;
+  color: white;
+  font-weight: 600;
+}
+
+.main-section tbody {
+  background-color: #D6E4FF;
+  color: black;
+}
+
+.Planet-1,
+.Planet-2,
+.Planet-3,
+.Planet-4,
+.Planet-5 {
+  background-color: #D6E4FF;
+}
+
+
+@media (max-width: 768px) {
+  table {
+    min-width: 500px; 
+  }
+
+  .main-section th, 
+  .main-section td {
+    font-size: 11px;
+    padding: 8px 5px;
+  }
+
+  .table-wrapper {
+    box-shadow: inset -10px 0 10px -10px rgba(0,0,0,0.15); 
+  }
+}
+
+@media (max-width: 480px) {
+  .main-section th, 
+  .main-section td {
+    font-size: 9px;
+    padding: 4px 3px;
+  }
+}
