@@ -9,19 +9,17 @@
   --sub-table-background: #f2f7ff;
 }
 
-article-section {
-  max-width: 1100px;
-  margin: 60px auto;          /* was: 0 20px — this centres the section */
-  padding: 3rem 2.5rem;
+/* FIXED: Added the dot for the class selector and matched Hero padding */
+.article-section {
+  width: 100%;
+  padding: 80px 8%; 
+  box-sizing: border-box;
   background-color: var(--card-section-color);
-  
 }
-
 
 .section-header {
   margin-bottom: 2.5rem;
-  padding-top: 2rem;
-  /*text-align: center;*/
+  padding-top: 0; /* Removed padding-top since the section has 80px now */
 }
 
 .section-header h2 {
@@ -36,9 +34,7 @@ article-section {
   font-size: 1rem;
   color: var(--paragraph-color);
   line-height: 1.7;
-  /*max-width: 1680px;*/
   margin-bottom: 0.4rem;
-  /* background-color: red; */
   text-align: center;
 }
 
@@ -48,7 +44,7 @@ article-section {
   grid-template-columns: repeat(3, 1fr);   /* fixed 3 columns on desktop */
   gap: 1.5rem;
   margin-top: 2rem;
-  padding: 32px;
+  padding: 0; /* UPDATED: Removed 32px padding so cards align with the 8% container */
 }
 
 /* ── Individual card ── */
@@ -112,7 +108,6 @@ article-section {
   line-height: 1.6;
   margin: 0;
   text-align: center;
-  /* remove the -webkit-box clamp lines entirely */
 }
 
 /* ── Skeleton loading ── */
@@ -204,19 +199,13 @@ article-section {
     gap: 0.5rem;
   }
 
-  .article-section {
-    padding: 2rem 0.75rem;
-  }
+  /* Removed the padding override so it smoothly uses the 8% from the main class */
 }
 
 @media (max-width: 414px) {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
-  }
-
-  .article-section {
-    padding: 2rem 0.75rem;
   }
 
   .pluto {
