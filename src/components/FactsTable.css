@@ -2,24 +2,33 @@
             width: 100%;
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;
-            border-radius: 20px;
+            border-radius: 12px;
+            border: 1px solid #d0d9f0;
 }
 table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
     text-align: center;
-    padding: 1%;
     border-radius: 12 px;
     overflow: hidden;
+    min-width: 500px;
 }
 
-            @media only screen and (max-width: 400px) {
-                table {
-                    font-size: 14px;
-                }
-            }
-            
+   @media (max-width: 768px) {
+    th, td {
+        font-size: 11px;
+        padding: 8px 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    th, td {
+        font-size: 9px;
+        padding: 4px 3px;
+    }
+
+}
             th, td {
                 border: 1px solid white;
                 padding: 10px;
@@ -31,8 +40,8 @@ table {
             font-weight: 600;
         }
           tbody {
-            background-color: #E8F0FE;
-            
+            background-color: #D6E4FF;
+            color: black;
         }
        
         h2{
