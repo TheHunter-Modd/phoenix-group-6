@@ -5,7 +5,7 @@ A React-based web application that allows users to explore the solar system thro
 
 Team Members and github profile 
 
-Team Lead:[Zikoranibuchi](https://github.com/Zikoo-thebesht)
+Team Lead: [Zikoranibuchi](https://github.com/Zikoo-thebesht)
 
 Assistant team lead: [Victor](https://github.com/TheHunter-Modd/phoenix-group-6.git)
 
